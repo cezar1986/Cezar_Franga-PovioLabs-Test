@@ -4,32 +4,94 @@
         <title></title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1, minimum-scale=1">
-        <link rel="shortcut icon" href="assets/img/favicon.ico">
         <!-- CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link href="//fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <!--[if IE]>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
         <![endif]-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
-        <nav class="mainNav">
-            <div class="content">
-                <a href="/" class="logo"><img src="assets/img/svg/logo.svg" alt="Trul" title="Trul" /></a>
-                <ul class="menuTop">
-                    <li class="menuExplore menuActive"><a href="#"><span></span>Explore</a></li>
-                    <li class="menuTrips"><a href="#"><span></span>Trips</a></li>
-                    <li class="menuMsg"><a href="#"><span>2</span>Messages</a></li>
-                </ul>
-                <div class="userInfo">
-                    <span>John</span>
+        <nav class="row mainNav">
+            <div class="col-md-12">
+                <div class="content">
+                    <a href="/" class="logo"><img src="assets/img/svg/logo.svg" alt="Trul" title="Trul" /></a>
+                    <ul class="menuTop">
+                        <li class="menuExplore menuActive"><a href="#"><span></span>Explore</a></li>
+                        <li class="menuTrips"><a href="#"><span></span>Trips</a></li>
+                        <li class="menuMsg"><a href="#"><span>2</span>Messages</a></li>
+                    </ul>
+                    <div class="userInfo">
+                        <span>John</span>
+                        <img src="assets/img/jpg/userImg.jpg" alt="User" />
+                    </div>
                 </div>
             </div>
         </nav>
+        <section class="row">
+            <div class="content">
+                <div class="col-md-4 sidebar">
+                    <div class="row">
+                        <div class="col-md-12 p-l-30 p-r-30 p-t-30 sidebarHeader">
+                            <span class="closeIcon">X</span>
+                            <button type="button" class="btnGlobal btnOrange m-l-20 pull-right">message</button>
+                            <button type="button" class="btnGlobal btnWhite pull-right">connect</button>
+                            <div class="sidebarHeaderIfo">
+                                <img src="assets/img/jpg/sidebarUserImg.jpg" />
+                                <p>Michael, 29<span>San Francisco, California</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 p-l-30 p-r-30 sidebarContent">
+                            <ul class="sidebarActions">
+                                <li><a href="#" class="iconHouse"></a></li>
+                                <li><a href="#" class="iconHandshake"></a></li>
+                                <li><a href="#" class="iconMedical"></a></li>
+                            </ul>
+                            <p class="lblText">I am an adventurous wanderer who likes meeting new people and getting better to know about interesting cultures.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 p-l-30 p-r-30 sidebarTrip">
+                            <h2>MY TOP 3 RECOMMENDATIONS</h2>
+                            <ul>
+                                <li><p><i class="iconDine"></i>Little Delhi - Indian Restaurant <a data-toggle="tooltip" data-placement="top" title="Add to your trip"></a></p></li>
+                                <li><p><i class="iconDrink"></i>Oceanic View Rooftop <a data-toggle="tooltip" data-placement="top" title="Add to your trip"></a></p></li>
+                                <li><p><i class="iconDrink"></i>Marshall’s Beach <a data-toggle="tooltip" data-placement="top" title="Add to your trip"></a></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 p-l-30 p-r-30 sidebarConnections">
+                            <h2>CONNECTIONS</h2>
+                            <ul>
+                                <li><img src="assets/img/jpg/connection_1.jpg" /><p>Adam M.</p></li>
+                                <li><img src="assets/img/jpg/connection_2.jpg" /><p>Terry S.</p></li>
+                                <li><img src="assets/img/jpg/connection_3.jpg" /><p>Donna W.</p></li>
+                                <li><img src="assets/img/jpg/connection_4.jpg" class="borderPink" /><p>Gloria S.</p></li>
+                                <li><span>+8</span><p>Adam M.</p></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 p-l-30 p-r-30 sidebarInstagram">
+                            <h2>INSTAGRAM FEED</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 map" id="map">
+                </div>
+            </div>
+        </section>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>        
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script type="text/javascript" src="assets/js/gmaps.js"></script>        
     </body>
 </html>

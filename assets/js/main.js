@@ -1,8 +1,5 @@
-// BROWSER DETECTION
 $(document).ready(function () {
-    //$(function () {
-    //    SyntaxHighlighter.all();
-    //});
+    // BROWSER DETECTION
     if (navigator.userAgent.indexOf('Mac OS X') != -1) {
         // Mac
         if ($.browser.opera) { $('html').addClass('opera'); }
@@ -22,6 +19,6 @@ $(document).ready(function () {
         if (/chrome/.test(navigator.userAgent.toLowerCase())) { $('html').addClass('chrome-pc'); }
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) { $('html').addClass('safari-pc'); }
     }
-   
+    // END BROWSER DETECTION
+    $('[data-toggle="tooltip"]').tooltip();
 });
-// END BROWSER DETECTION
