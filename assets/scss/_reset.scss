@@ -9,4 +9,19 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, div{
     display:block;
 }
+::-webkit-input-placeholder {
+    color: #9298a0;
+}
+
+:-moz-placeholder {
+    color: #9298a0;
+}
+
+::-moz-placeholder {
+    color: #9298a0;
+}
+
+:-ms-input-placeholder {
+    color: #9298a0;
+}
 /*-------------------END RESET--------------------------*/

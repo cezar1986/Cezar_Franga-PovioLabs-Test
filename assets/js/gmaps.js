@@ -476,19 +476,20 @@ function initialize() {
         zoom: 4,
         center: myLatlng,
         scrollwheel: true,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "weight": "2.00"}] }, { "featureType": "all", "elementType": "geometry.stroke", "stylers": [{ "color": "#9c9c9c"}] }, { "featureType": "all", "elementType": "labels.text", "stylers": [{ "visibility": "on"}] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2"}] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off"}] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45}] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#eeeeee"}] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7b7b7b"}] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified"}] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off"}] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off"}] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on"}] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#c8d7d4"}] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#070707"}] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff"}]}]
     }
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    overlay = new CustomMarker(myLatlng,map,{marker_id: 'markerCentered'});
-    overlay = new CustomMarkerConn1(conn1,map,{marker_id: 'markerConn1'});
-    overlay = new CustomMarkerConn2(conn2,map,{marker_id: 'markerConn2'});
-    overlay = new CustomMarkerConn3(conn3,map,{marker_id: 'markerConn3'});
-    overlay = new CustomMarkerConn4(conn4,map,{marker_id: 'markerConn4'});
-    overlay = new CustomMarkerConn5(conn5,map,{marker_id: 'markerConn5'});
-    overlay = new CustomMarkerDot1(dot1,map,{marker_id: 'markerDot1'});
-    overlay = new CustomMarkerDot2(dot2,map,{marker_id: 'markerDot2'});
-    overlay = new CustomMarkerDot3(dot3,map,{marker_id: 'markerDot3'});
-    overlay = new CustomMarkerDot4(dot4,map,{marker_id: 'markerDot4'});
-    overlay = new CustomMarkerDot5(dot5,map,{marker_id: 'markerDot5'});
+    overlay = new CustomMarker(myLatlng, map, { marker_id: 'markerCentered' });
+    overlay = new CustomMarkerConn1(conn1, map, { marker_id: 'markerConn1' });
+    overlay = new CustomMarkerConn2(conn2, map, { marker_id: 'markerConn2' });
+    overlay = new CustomMarkerConn3(conn3, map, { marker_id: 'markerConn3' });
+    overlay = new CustomMarkerConn4(conn4, map, { marker_id: 'markerConn4' });
+    overlay = new CustomMarkerConn5(conn5, map, { marker_id: 'markerConn5' });
+    overlay = new CustomMarkerDot1(dot1, map, { marker_id: 'markerDot1' });
+    overlay = new CustomMarkerDot2(dot2, map, { marker_id: 'markerDot2' });
+    overlay = new CustomMarkerDot3(dot3, map, { marker_id: 'markerDot3' });
+    overlay = new CustomMarkerDot4(dot4, map, { marker_id: 'markerDot4' });
+    overlay = new CustomMarkerDot5(dot5, map, { marker_id: 'markerDot5' });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
