@@ -15,7 +15,11 @@ CustomMarker.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerCentered';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -57,7 +61,11 @@ CustomMarkerConn1.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerConn1 markerGlobal';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -99,7 +107,11 @@ CustomMarkerConn2.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerConn2 markerGlobal';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -141,7 +153,11 @@ CustomMarkerConn3.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerConn3 markerGlobal';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -183,7 +199,11 @@ CustomMarkerConn4.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerConn4 markerGlobal';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -225,7 +245,11 @@ CustomMarkerConn5.prototype.draw = function () {
         div = this.div = document.createElement('div');
 
         div.className = 'markerConn5 markerGlobal';
-
+        google.maps.event.addDomListener(div, "click", function (event) {
+            $(".sidebarListing").slideUp();
+            $(".sidebarDetails").slideDown();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
         if (typeof (self.args.marker_id) !== 'undefined') {
             div.dataset.marker_id = self.args.marker_id;
         }
@@ -476,6 +500,7 @@ function initialize() {
         zoom: 4,
         center: myLatlng,
         scrollwheel: true,
+        panControl: false,
         disableDefaultUI: true,
         styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "weight": "2.00"}] }, { "featureType": "all", "elementType": "geometry.stroke", "stylers": [{ "color": "#9c9c9c"}] }, { "featureType": "all", "elementType": "labels.text", "stylers": [{ "visibility": "on"}] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2"}] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off"}] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45}] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#eeeeee"}] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7b7b7b"}] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff"}] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified"}] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off"}] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off"}] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on"}] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#c8d7d4"}] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#070707"}] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff"}]}]
     }
@@ -491,5 +516,11 @@ function initialize() {
     overlay = new CustomMarkerDot3(dot3, map, { marker_id: 'markerDot3' });
     overlay = new CustomMarkerDot4(dot4, map, { marker_id: 'markerDot4' });
     overlay = new CustomMarkerDot5(dot5, map, { marker_id: 'markerDot5' });
+    var currCenter = map.getCenter();
+    $(".mapPointer").click(function () {
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(currCenter);
+    });
+
 }
 google.maps.event.addDomListener(window, 'load', initialize);

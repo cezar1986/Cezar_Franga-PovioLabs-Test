@@ -21,4 +21,24 @@ $(document).ready(function () {
     }
     // END BROWSER DETECTION
     $('[data-toggle="tooltip"]').tooltip();
+    $(".closeIcon").click(function () {
+        $(".sidebarDetails").slideUp();
+        $(".sidebarListing").slideDown();
+    });
+    $(".scrollSidebar").mCustomScrollbar({
+        scrollInertia: 100,
+        autoHideScrollbar: true,
+        advanced: {
+            updateOnContentResize: true
+        }        
+    });
+    var windowHeight = $(window).height();
+    var headerHeight = $(".mainNav").height();
+    $("#map, .scrollSidebar").height(windowHeight - headerHeight);
+    $(window).resize(function () {
+        var windowHeight = $(window).height();
+        var headerHeight = $(".mainNav").height();
+        $("#map, .scrollSidebar").height(windowHeight - headerHeight);
+    });
+    $(window).trigger('resize');
 });

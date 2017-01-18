@@ -1,11 +1,11 @@
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1390px) {
     .sidebarHeaderIfo{
         p{
-            margin-left:12px;
-            font-size:15px;
+            margin-left:10px;
+            font-size:14px;
         }
         span{
-            font-size:15px;
+            font-size:14px;
             letter-spacing:-0.5px;
         }
     }
@@ -23,6 +23,10 @@
         img{
             width:50px;
             height:50px;
+        }
+        p{
+            font-size:14px;
+            letter-spacing:-0.5px;
         }
     }
     .sidebarTrip{
@@ -326,6 +330,14 @@
 	.out-md{
 		display: none;
 	}
+    .sidebarTrip{
+        .iconDrink, .iconDine{
+            margin-right:5px;
+        }
+    }
+    .mCustomScrollBox>.mCSB_scrollTools{
+        right:15px !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -626,12 +638,12 @@
 	}
     .sidebarHeaderIfo{
         p{
-            margin-left:31px;
-            font-size:20px;
+            margin-left:10px;
+            font-size:14px;
         }
         span{
-            font-size:17px;
-            letter-spacing:0px;
+            font-size:14px;
+            letter-spacing:-0.5px;
         }
     }
     .sidebarConnections{
@@ -652,7 +664,7 @@
     }
     .sidebarTrip{
         p{
-            font-size:17px;
+            font-size:15px;
             letter-spacing:0px;
         }
         a{
@@ -660,6 +672,12 @@
             display:inline-block;
             margin-left:20px;
         }
+    }
+    .mapExtraDots{
+        display:none !important;
+    }
+    .mCustomScrollBox>.mCSB_scrollTools{
+        right:0px !important;
     }
 }
 
@@ -957,16 +975,23 @@
 	.out-xs{
 		display: none;
 	}
-    .mapExtraSearch, .mapExtraDots{
-        width:100%;
-        clear:both;
-        float:left;
-    }
     .mapExtraSearch{
         input[type=text]{
             width:100%;
             border:solid 1px grey;
         }
+    }
+    .menuTop{
+        margin-left:20px;
+    }
+    .scrollSidebar{
+        height:350px !important;
+    }
+    #map{
+        height:500px !important;
+    }
+    .mCustomScrollBox>.mCSB_scrollTools{
+        right:15px !important;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -976,20 +1001,16 @@
     .menuTop{
         padding-left:0px;
         clear:both;
-        width:100%;
         text-align:center;
         margin-left:0px;
+        width:100%;
         li{
             float:none;
             display:inline-block;
             text-align:center;
             margin-right:10px;
         }
-    }
-    .userInfo{
-        margin-top:-95px;
-        clear:both;
-    }
+    }    
     .sidebarHeaderIfo{
         p{
             margin-left:10px;
@@ -1010,6 +1031,16 @@
             display:inline-block;
             margin-left:15px;
         }
+    }
+    .mapExtraSearch{
+        left:20px;
+        right:30px;
+    }
+}
+@media only screen and (max-width: 575px) {
+.userInfo{
+        margin-top:-100px;
+        clear:both;
     }
 }
 @media only screen and (max-width: 560px) {
