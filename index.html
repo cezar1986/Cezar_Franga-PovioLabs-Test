@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Home</title>
         <meta charset="utf-8" />
+        <link rel="shortcut ico" href="assets/img/png/favicon.ico">
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1, minimum-scale=1">
         <!-- CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -11,21 +12,22 @@
         <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-                    <!--[if IE]>
-                                     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
-                                <![endif]-->
+        <!--[if IE]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+        <![endif]-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <body>
+        <!-------------------------------MAIN NAV-------------------------------->
         <nav class="row mainNav">
             <div class="col-md-12 p-b-xs-10">
                 <div class="row">
-                    <div class="col-md-8 col-sm-8">
+                    <div class="col-md-8 col-sm-8 menuZindex">
                         <a href="/" class="logo m-l-30"><img src="assets/img/svg/logo.svg" alt="Trul" title="Trul" /></a>
                         <ul class="menuTop m-l-70">
                             <li class="menuExplore menuActive"><a href="#"><span></span>Explore</a></li>
                             <li class="menuTrips"><a href="#"><span></span>Trips</a></li>
-                            <li class="menuMsg"><a href="#"><span>2</span>Messages</a></li>
+                            <li class="menuMsg"><a href="messages.html"><span>2</span>Messages</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-4 userInfo float-right m-t-15 p-r-30">
@@ -35,100 +37,184 @@
                 </div>
             </div>
         </nav>
+        <!-------------------------------MAIN NAV END-------------------------------->
         <section class="row mapRelative">
+            <!-------------------------------SIDEBAR-------------------------------->
             <div class="col-lg-4 col-md-5 sidebar p-l-30 p-l-md-10 p-r-md-0 p-r-sm-15">
                 <div class="row scrollSidebar">
                     <div class="col-md-12">
                         <div class="row scrollSidebarListing">
                             <div class="col-md-12 sidebarListing">
-                        <div class="row">
-                            <div class="col-md-12 p-l-30 p-r-30 p-t-30 p-b-30 p-r-md-25 p-t-xxs-15 p-b-xxs-15 sidebarListingHeader">
-                                <p>Friends from:</p>
-                                <h3>United States Of America</h3>
-                                <h4>
-                                    Sort results:
-                                    <select name="sort" id="sort">
-                                        <option value="Closest to me">Closest to me</option>
-                                        <option value="Nearby me">Nearby me</option>
-                                        <option value="Far away">Far away</option>
-                                    </select>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 p-l-30 p-r-30 p-t-30 p-b-30 p-t-xxs-15 p-b-xxs-15 sidebarListingContent">
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
+                                <div class="row">
+                                    <div class="col-md-12 p-l-30 p-r-30 p-t-30 p-b-30 p-r-md-25 p-t-xxs-15 p-b-xxs-15 sidebarListingHeader">
+                                        <p>Friends from:</p>
+                                        <h3>United States Of America</h3>
+                                        <h4>Sort results:
+                                            <select name="sort" id="sort">
+                                                <option value="Closest to me">Closest to me</option>
+                                                <option value="Nearby me">Nearby me</option>
+                                                <option value="Far away">Far away</option>
+                                            </select>
+                                        </h4>
                                     </div>
                                 </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
-                                    </div>
-                                </div>
-                                <div class="row p-b-15">
-                                    <div class="col-md-12">
-                                        <img src="assets/img/jpg/connection_1.jpg" />
-                                        <p>David Brencht<span>Omaha, Nebraska</span></p>
+                                <div class="row">
+                                    <div class="col-md-12 p-l-30 p-r-30 m-t-10 p-b-10 sidebarListingContent">
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_1.jpg" />
+                                                <p>Adam M.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_2.jpg" />
+                                                <p>Terry S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_3.jpg" />
+                                                <p>Donna W.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_4.jpg" />
+                                                <p>Gloria S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/userImg.jpg" />
+                                                <p>John A.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_1.jpg" />
+                                                <p>Adam M.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_2.jpg" />
+                                                <p>Terry S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_3.jpg" />
+                                                <p>Donna W.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_4.jpg" />
+                                                <p>Gloria S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/userImg.jpg" />
+                                                <p>John A.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_1.jpg" />
+                                                <p>Adam M.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_2.jpg" />
+                                                <p>Terry S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_3.jpg" />
+                                                <p>Donna W.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/connection_4.jpg" />
+                                                <p>Gloria S.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-b-10">
+                                            <div class="col-md-12 p-t-10 p-b-10">
+                                                <img src="assets/img/jpg/userImg.jpg" />
+                                                <p>John A.<span>Omaha, Nebraska</span></p>
+                                                <div class="listingActions">
+                                                    <span class="tripIcon">12</span>
+                                                    <span class="userIcon">84</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                        </div>
-                    </div>
-                    
                     <div class="col-md-12 sidebarDetails collapse">
                         <div class="row">
                             <div class="col-md-12 p-l-30 p-r-30 p-t-30 p-r-md-25 p-t-xxs-15 sidebarHeader">
@@ -137,7 +223,7 @@
                                         <span class="closeIcon">X</span>
                                     </div>
                                     <div class="col-md-9 col-xxs-12 m-t-xxs-5 p-l-xxs-10 p-r-xxs-10 p-l-0">
-                                        <button type="button" class="btnGlobal btnOrange m-l-20 m-b-10 float-right">message</button>
+                                        <button type="button" id="btnMsg" class="btnGlobal btnOrange m-l-20 m-b-10 float-right">message</button>
                                         <button type="button" class="btnGlobal btnWhite float-right">connect</button>
                                     </div>
                                 </div>
@@ -189,6 +275,8 @@
                     </div>
                 </div>
             </div>
+            <!-------------------------------SIDEBAR END-------------------------------->
+            <!-------------------------------MAP-------------------------------->
             <div class="col-lg-8 col-md-7 mapContainer">
                 <div class="row">
                     <div class="col-md-12 map" id="map"></div>
@@ -204,11 +292,14 @@
                     <div class="mapPointer"></div>
                 </div>
             </div>
+            <!-------------------------------MAP END-------------------------------->
         </section>
+        <!-------------------------------JS-------------------------------->
         <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js"></script>        
         <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/scrollbarInit.js"></script>
         <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAV1WeH03QXC3cIFC_2UaLPjRenjXB15u0"></script>
         <script type="text/javascript" src="assets/js/gmaps.js"></script>

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".scrollSidebar").mCustomScrollbar({scrollInertia:70,autoHideScrollbar:!0,scrollbarPosition:"right",advanced:{updateOnContentResize:!0}}),$(".scrollingMsg").mCustomScrollbar({scrollInertia:70,autoHideScrollbar:!0,advanced:{updateOnContentResize:!0,autoScrollOnFocus:!1}})});

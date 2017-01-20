@@ -1,0 +1,3 @@
+First created page - Listing in left sidebar, when clicked an item or clicked on a marker on the map it will open the details in left sidebar (the screen from zeplin).
+Second created page - Messages page.
+Third created page - login.html.

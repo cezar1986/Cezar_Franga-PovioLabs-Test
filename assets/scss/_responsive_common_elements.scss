@@ -680,7 +680,14 @@
         right:0px !important;
     }
 }
-
+@media only screen and (max-width: 800px) {
+    .sidebarListingContent{
+        p{
+            margin-left:10px;
+        }
+    }
+    
+}
 @media only screen and (max-width: 767px) {
 	.m-t-xs-0{
 		margin-top:  0;
@@ -984,14 +991,34 @@
     .menuTop{
         margin-left:20px;
     }
-    .scrollSidebar{
+    .scrollSidebar, .scrollingMsg{
         height:350px !important;
+    }
+    .msgScrollSidebar.scrollSidebar{
+        height:200px !important;
     }
     #map{
         height:500px !important;
     }
     .mCustomScrollBox>.mCSB_scrollTools{
         right:15px !important;
+    }
+    .msgSendArea{
+        left:10px;
+    }
+    .menuZindex{
+        position:relative;
+        z-index:3;
+    }
+    .userInfo{
+        position:relative;
+        z-index:1;
+    }
+    .loginContent{
+        margin-top:30px;
+    }
+    .loginContainer{
+        height:auto !important;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -1042,6 +1069,13 @@
         margin-top:-100px;
         clear:both;
     }
+.userLogin{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:5;
+    width:auto;
+}
 }
 @media only screen and (max-width: 560px) {
 	.m-t-xxs-0{
@@ -1358,5 +1392,8 @@
         width:100%;
         clear:both;
         float:left;
+    }
+    .listingActions{
+        display:none;
     }
 }
